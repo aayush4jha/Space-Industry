@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Rotating background image */
+body::before {
+    content: '';
+    position: fixed;
+    top: -150%;
+    left: -150%;
+    width: 400%;
+    height: 400%;
+    background-image: url('images/large-background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation: rotate 60s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Header */
+header {
+    background: rgba(26, 26, 26, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 1s ease-out;
+    z-index: 100;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    animation: fadeInDown 2s;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+    transform: scale(1.1);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin: 0;
+    animation: zoomIn 2s;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 0;
+    animation: fadeInUp 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+#about, #categories, #missions, #contact {
+    background: rgba(26, 26, 26, 0.8);
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.mission {
+    background: #333;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInLeft 1s ease-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mission:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 2s ease-in;
+}
+
+form label, form input, form textarea, form button {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    animation: fadeInRight 2s;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    animation: fadeInUp 2s;
+}
+
+form button:hover {
+    background: #ff8c00;
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(26, 26, 26, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    animation: fadeInUp 2s;
+}
+
+.footer-pics {
+    margin: 10px 0;
+}
+
+.footer-pics a {
+    margin: 0 5px;
+}
