@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Industry - Categories</title>
+    <link rel="icon" type="image/png" href="/logo.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="header flex flex-col sm:flex-row sm:items-center p-4 bg-gray-800 text-white">
+        <div class="logo flex items-center justify-between sm:justify-start w-full">
+            <a href="index.html">
+                <img src="/logo.jpg" alt="Logo" class="h-12 w-12 rounded-full m-0 p-0">
+            </a>
+            <h1 class="text-lg pl-2 m-0">Space Industry</h1>
+            <button id="hamburger" class="sm:hidden block flex items-center px-3 py-2">
+                <svg class="w-[30px]" viewBox="0 0 100 80" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="30" width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="60" width="100" height="20" rx="10" fill="white"></rect>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav-menu" class="hidden sm:block mt-4 sm:mt-0 sm:ml-auto">
+            <ul class="flex flex-col sm:flex-row list-none p-0 gap-4 sm:gap-6">
+                <li><a href="index.html" class="text-white no-underline">Home</a></li>
+                <li><a href="about.html" class="text-white no-underline">About</a></li>
+                <li><a href="categories.html" class="text-white no-underline">Categories</a></li>
+                <li><a href="missions.html" class="text-white no-underline">Missions</a></li>
+                <li><a href="contact.html" class="text-white no-underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="categorie" class="p-6 flex flex-col items-center">
+      <h2 class="text-3xl mb-4">Explore Our Categories</h2>
+      <p class="mb-8 text-center max-w-xl">Learn more about our different areas of expertise.</p>
+      
+      <div class="category bg-gray-800 p-6 mb-8 rounded-lg max-w-xl w-full text-center">
+        <h3 class="text-2xl mb-4">Astronomy</h3>
+        <img src="/astronomy.jpg" alt="Astronomy" class="rounded-lg mx-auto mb-4" />
+        <p>
+          Astronomy is the study of celestial objects, space, and the universe as a whole. This category covers everything from stars and planets to galaxies and the cosmos.
+        </p>
+        <a href="astronomy.html" class="text-cyan-400 mt-4 block">Click here to know more!</a>
+      </div>
+
+      <div class="category bg-gray-800 p-6 mb-8 rounded-lg max-w-xl w-full text-center">
+        <h3 class="text-2xl mb-4">Astrophysics</h3>
+        <img src="/astrophysics.jpg" alt="Astrophysics" class="rounded-lg mx-auto mb-4" />
+        <p>
+          Astrophysics applies the laws of physics and chemistry to explain the birth, life, and death of stars, planets, galaxies, nebulae, and other objects in the universe.
+        </p>
+        <a href="astrophysics.html" class="text-cyan-400 mt-4 block">Click here to know more!</a>
+      </div>
+
+      <div class="category bg-gray-800 p-6 mb-8 rounded-lg max-w-xl w-full text-center">
+        <h3 class="text-2xl mb-4">Space Travel</h3>
+        <img src="/space-travel.jpg" alt="Space Travel" class="rounded-lg mx-auto mb-4" />
+        <p>
+          Space travel involves the development of spacecraft and technologies for the exploration of outer space. This category covers human and robotic missions, spacecraft design, and the future of space travel.
+        </p>
+        <a href="space-travel.html" class="text-cyan-400 mt-4 block">Click here to know more!</a>
+      </div>
+
+      <div class="category bg-gray-800 p-6 mb-8 rounded-lg max-w-xl w-full text-center">
+        <h3 class="text-2xl mb-4">Planetary Science</h3>
+        <img src="/planetary-science.jpg" alt="Planetary Science" class="rounded-lg mx-auto mb-4" />
+        <p>
+          Planetary science focuses on the study of planets, moons, and planetary systems, particularly those of the Solar System and the processes that form them.
+        </p>
+        <a href="planetary-science.html" class="text-cyan-400 mt-4 block">Click here to know more!</a>
+      </div>
+    </section>
+    <footer class="bg-gray-800 text-white text-center py-6 mt-8">
+        Made with <span class="text-red-600 text-[24px]">&hearts;</span> by Team Crazy Coders.
+        Connect with us for latest updates!
+       <div class="flex justify-center mt-4 space-x-4">
+           <a href="https://www.facebook.com">
+               <img src="/facebook.jpg" alt="Facebook" class="h-12 w-12">
+           </a>
+           <a href="https://www.instagram.com">
+               <img src="/instagram.jpg" alt="Instagram" class="h-12 w-12">
+           </a>
+           <a href="https://www.twitter.com">
+               <img src="/twitter.jpg" alt="Twitter" class="h-12 w-12">
+           </a>
+           <a href="https://www.linkedin.com">
+               <img src="/linkedin.avif" alt="LinkedIn" class="h-12 w-12">
+           </a>
+       </div>
+       <hr class="my-4 border-gray-600">
+        &copy; 2024 Space Industry. All rights reserved.
+   </footer>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           document.getElementById('hamburger').addEventListener('click', function() {
+               const navMenu = document.getElementById('nav-menu');
+               if (navMenu.classList.contains('hidden')) {
+                   navMenu.classList.remove('hidden');
+                   navMenu.classList.add('block');
+               } else {
+                   navMenu.classList.remove('block');
+                   navMenu.classList.add('hidden');
+               }
+           });
+       });
+   </script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

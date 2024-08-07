@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy - Explore the Universe</title>
+    <link rel="icon" type="image/png" href="/logo.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-white">
+    <header class="header flex flex-col sm:flex-row sm:items-center p-4 bg-gray-800 text-white">
+        <div class="logo flex items-center justify-between sm:justify-start w-full">
+            <a href="index.html">
+                <img src="/logo.jpg" alt="Logo" class="h-12 w-12 rounded-full m-0 p-0">
+            </a>
+            <h1 class="text-lg pl-2 m-0">Space Industry</h1>
+            <button id="hamburger" class="sm:hidden block flex items-center px-3 py-2">
+                <svg class="w-[30px]" viewBox="0 0 100 80" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="30" width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="60" width="100" height="20" rx="10" fill="white"></rect>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav-menu" class="hidden sm:block mt-4 sm:mt-0 sm:ml-auto">
+            <ul class="flex flex-col sm:flex-row list-none p-0 gap-4 sm:gap-6">
+                <li><a href="index.html" class="text-white no-underline">Home</a></li>
+                <li><a href="about.html" class="text-white no-underline">About</a></li>
+                <li><a href="categories.html" class="text-white no-underline">Categories</a></li>
+                <li><a href="missions.html" class="text-white no-underline">Missions</a></li>
+                <li><a href="contact.html" class="text-white no-underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="content" class="p-4">
+        <div class="text-center">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Learn more about Astronomy!</h1>
+        </div>
+        <div class="space-y-8 sm:px-32">
+            <div class="flex flex-col bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-800   md:flex-row items-center  rounded-xl shadow-lg p-4">
+                <img src="/galaxy.jpg.crdownload" alt="Galaxy" class="h-64 md:w-1/2 rounded-xl">
+                <div class="md:w-1/2 p-4 text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-4">Galaxies</h2>
+                    <p>Galaxies are vast systems of stars, planetary systems, interstellar gas, dust, and dark matter, bound together by gravity. Our galaxy, the Milky Way, contains billions of stars and is just one of many billions of galaxies in the universe. Galaxies can come in various shapes, including spiral, elliptical, and irregular. Each galaxy holds a unique history and characteristics, offering a glimpse into the processes that shape our universe.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-800 rounded-xl shadow-lg p-4">
+                <div class="md:w-1/2 p-4 text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-4">Black Holes</h2>
+                    <p>Black holes are regions in space where the gravitational pull is so strong that nothing, not even light, can escape. They form from the remnants of massive stars that collapse under their own gravity. Black holes can vary in size, from small stellar-mass black holes to supermassive black holes found at the centers of galaxies. Despite their invisibility, their presence is inferred by observing the effects of their gravity on nearby matter and light.</p>
+                </div>
+                <img src="/black-hole.jpg" alt="Black Hole" class="h-64 md:w-1/2 rounded-xl">
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-800 rounded-xl shadow-lg p-4">
+                <img src="/exoplanet.jpg" alt="Exoplanet" class="h-64 md:w-1/2 rounded-xl">
+                <div class="md:w-1/2 p-4 text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-4">Exoplanets</h2>
+                    <p>Exoplanets are planets that orbit stars outside our solar system. The discovery of exoplanets has revolutionized our understanding of the universe, revealing a vast diversity of planetary systems. These planets vary widely in size, composition, and distance from their host stars. The study of exoplanets is crucial for understanding planetary formation and the potential for life beyond Earth.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-800 rounded-xl shadow-lg p-4">
+                <div class="md:w-1/2 p-4 text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-4">Supernovae</h2>
+                    <p>Supernovae are powerful and luminous explosions that mark the end of a star's life cycle. They are one of the most energetic events in the universe, capable of outshining entire galaxies for a short period. Supernovae play a critical role in enriching the interstellar medium with heavy elements, which are essential for the formation of new stars and planets.</p>
+                </div>
+                <img src="/supernova.jpg" alt="Supernova" class="h-64 md:w-1/2 rounded-xl">
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-800 rounded-xl shadow-lg p-4">
+                <img src="/nebula.jpg" alt="Nebula" class="h-64 md:w-1/2 rounded-xl">
+                <div class="md:w-1/2 p-4 text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-4">Nebulae</h2>
+                    <p>Nebulae are vast clouds of gas and dust in space, often serving as the birthplaces of stars. These stunning celestial objects come in various forms, including emission nebulae, reflection nebulae, and planetary nebulae. The study of nebulae helps astronomers understand the processes of star formation and the life cycles of stars.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-800 rounded-xl shadow-lg p-4">
+                <div class="md:w-1/2 p-4 text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-4">Dark Matter</h2>
+                    <p>Dark matter is a mysterious and invisible substance that makes up about 27% of the universe's mass and energy. While it does not emit, absorb, or reflect light, its presence is inferred from its gravitational effects on visible matter, such as galaxies and galaxy clusters. Understanding dark matter is one of the biggest challenges in modern astrophysics, as it holds the key to understanding the universe's structure and evolution.</p>
+                </div>
+                <img src="/dark-matter.jpg" alt="Dark Matter" class="h-64 md:w-1/2 rounded-xl">
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white text-center py-6 mt-8">
+        Made with <span class="text-red-600 text-[24px]">&hearts;</span> by Team Crazy Coders.
+        Connect with us for latest updates!
+       <div class="flex justify-center mt-4 space-x-4">
+           <a href="https://www.facebook.com">
+               <img src="/facebook.jpg" alt="Facebook" class="h-12 w-12">
+           </a>
+           <a href="https://www.instagram.com">
+               <img src="/instagram.jpg" alt="Instagram" class="h-12 w-12">
+           </a>
+           <a href="https://www.twitter.com">
+               <img src="/twitter.jpg" alt="Twitter" class="h-12 w-12">
+           </a>
+           <a href="https://www.linkedin.com">
+               <img src="/linkedin.avif" alt="LinkedIn" class="h-12 w-12">
+           </a>
+       </div>
+       <hr class="my-4 border-gray-600">
+        &copy; 2024 Space Industry. All rights reserved.
+   </footer>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           document.getElementById('hamburger').addEventListener('click', function() {
+               const navMenu = document.getElementById('nav-menu');
+               if (navMenu.classList.contains('hidden')) {
+                   navMenu.classList.remove('hidden');
+                   navMenu.classList.add('block');
+               } else {
+                   navMenu.classList.remove('block');
+                   navMenu.classList.add('hidden');
+               }
+           });
+       });
+   </script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Industry - Missions</title>
+    <link rel="icon" type="image/png" href="/logo.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background: url("path/to/your/animation.gif") center/cover no-repeat;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-white bg-gray-900">
+    <header class="header flex flex-col sm:flex-row sm:items-center p-4 bg-gray-800 text-white">
+        <div class="logo flex items-center justify-between sm:justify-start w-full">
+            <a href="index.html">
+                <img src="/logo.jpg" alt="Logo" class="h-12 w-12 rounded-full m-0 p-0">
+            </a>
+            <h1 class="text-lg pl-2 m-0">Space Industry</h1>
+            <button id="hamburger" class="sm:hidden block flex items-center px-3 py-2">
+                <svg class="w-[30px]" viewBox="0 0 100 80" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="30" width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="60" width="100" height="20" rx="10" fill="white"></rect>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav-menu" class="hidden sm:block mt-4 sm:mt-0 sm:ml-auto">
+            <ul class="flex flex-col sm:flex-row list-none p-0 gap-4 sm:gap-6">
+                <li><a href="index.html" class="text-white no-underline">Home</a></li>
+                <li><a href="about.html" class="text-white no-underline">About</a></li>
+                <li><a href="categories.html" class="text-white no-underline">Categories</a></li>
+                <li><a href="missions.html" class="text-white no-underline">Missions</a></li>
+                <li><a href="contact.html" class="text-white no-underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="missions" class="p-4 sm:px-32">
+      <h1 class="text-2xl text-center mb-8">Our Missions</h1>
+      <div class="mission mb-10 bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl mb-4">Mission to Mars</h3>
+        <div
+          class="mission-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4"
+        >
+          <img
+            src="/mission-to-mars1.jpg"
+            alt="Mission to Mars Image 1"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/mission-to-mars2.jpg"
+            alt="Mission to Mars Image 2"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/mission-to-mars3.jpg"
+            alt="Mission to Mars Image 3"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/mission-to-mars4.jpg"
+            alt="Mission to Mars Image 4"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+        </div>
+        <p class="mt-4">
+          Our groundbreaking mission to explore the Red Planet. This mission
+          aims to investigate the surface and atmosphere of Mars, searching for
+          signs of past or present life, and to prepare for future human
+          exploration. Advanced robotics and cutting-edge technology are at the
+          forefront of this mission, providing detailed data and high-resolution
+          imagery to help us understand our neighboring planet better.
+        </p>
+      </div>
+      <div class="mission mb-10 bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl mb-4">Lunar Expedition</h3>
+        <div class="
+        mission-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+          <img
+            src="/moon1.jpg"
+            alt="Lunar Expedition Image 1"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/moon2.jpg"
+            alt="Lunar Expedition Image 2"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/moon3.jpg"
+            alt="Lunar Expedition Image 3"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/moon4.jpg"
+            alt="Lunar Expedition Image 4"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+        </div>
+        <p class="mt-4">
+          Returning to the Moon to pave the way for future exploration. This
+          mission focuses on establishing a sustainable human presence on the
+          lunar surface. By constructing habitats and conducting scientific
+          research, we aim to utilize lunar resources and test new technologies
+          that will be vital for long-term space exploration. The mission also
+          seeks to inspire future generations of space explorers and scientists.
+        </p>
+      </div>
+      <div class="mission mb-10 bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl mb-4">Exploring Europa</h3>
+        <div class="
+        mission-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+          <img
+            src="/europa1.jpg"
+            alt="Exploring Europa Image 1"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/europa2.jpg"
+            alt="Exploring Europa Image 2"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/europa3.jpg"
+            alt="Exploring Europa Image 3"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/europa4.jpg"
+            alt="Exploring Europa Image 4"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+        </div>
+        <p class="mt-4">
+          Diving into the icy world of Jupiter's moon Europa. This mission aims
+          to explore the ice-covered ocean beneath Europa's surface. By
+          deploying a variety of instruments and landers, we seek to understand
+          the moon's geology, search for potential signs of life, and gather
+          data that could have implications for understanding habitability in
+          other parts of our solar system and beyond.
+        </p>
+      </div>
+      <div class="mission mb-10 bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl mb-4">Voyage to the Asteroid Belt</h3>
+        <div class="
+        mission-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+          <img
+            src="/asteroid1.jpg"
+            alt="Voyage to the Asteroid Belt Image 1"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/asteroid2.jpg"
+            alt="Voyage to the Asteroid Belt Image 2"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/asteroid3.jpg"
+            alt="Voyage to the Asteroid Belt Image 3"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/asteroid4.jpg"
+            alt="Voyage to the Asteroid Belt Image 4"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+        </div>
+        <p class="mt-4">
+          Investigating the building blocks of the solar system. This mission
+          targets various asteroids within the Asteroid Belt to study their
+          compositions, structures, and histories. By analyzing these ancient
+          space rocks, we can gain insights into the early solar system's
+          formation and evolution, and the processes that shaped our planetary
+          neighborhood.
+        </p>
+      </div>
+      <div class="mission mb-10 bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl mb-4">Exploring Titan</h3>
+        <div class="
+        mission-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+          <img
+            src="/titan1.jpg"
+            alt="Exploring Titan Image 1"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/titan2.jpg"
+            alt="Exploring Titan Image 2"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/titan3.jpg"
+            alt="Exploring Titan Image 3"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/titan4.jpg"
+            alt="Exploring Titan Image 4"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+        </div>
+        <p class="mt-4">
+          Venturing to Saturn's largest moon, Titan, which features lakes of
+          liquid methane and a thick, nitrogen-rich atmosphere. This mission
+          will send a lander and a drone to explore Titan's surface and
+          atmosphere, aiming to understand its complex climate and geology, and
+          assess its potential for supporting life.
+        </p>
+      </div>
+      <div class="mission mb-10 bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl mb-4">Journey to the Sun</h3>
+        <div class="mission-grid grid grid-cols-2 gap-4">
+          <img
+            src="/sun1.jpg"
+            alt="Journey to the Sun Image 1"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/sun2.jpg"
+            alt="Journey to the Sun Image 2"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/sun3.jpg"
+            alt="Journey to the Sun Image 3"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="/sun4.jpg"
+            alt="Journey to the Sun Image 4"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+        </div>
+        <p class="mt-4">
+          A close-up study of our star, the Sun. This mission involves sending a
+          spacecraft on a daring journey to the Sun's corona to study its
+          magnetic fields, solar winds, and the mechanisms driving solar flares.
+          The insights gained will help us understand space weather and its
+          impact on Earth and improve our predictions of solar activity.
+        </p>
+      </div>
+    </section>
+    <footer class="bg-gray-800 text-white text-center py-6 mt-8">
+        Made with <span class="text-red-600 text-[24px]">&hearts;</span> by Team Crazy Coders.
+        Connect with us for latest updates!
+       <div class="flex justify-center mt-4 space-x-4">
+           <a href="https://www.facebook.com">
+               <img src="/facebook.jpg" alt="Facebook" class="h-12 w-12">
+           </a>
+           <a href="https://www.instagram.com">
+               <img src="/instagram.jpg" alt="Instagram" class="h-12 w-12">
+           </a>
+           <a href="https://www.twitter.com">
+               <img src="/twitter.jpg" alt="Twitter" class="h-12 w-12">
+           </a>
+           <a href="https://www.linkedin.com">
+               <img src="/linkedin.avif" alt="LinkedIn" class="h-12 w-12">
+           </a>
+       </div>
+       <hr class="my-4 border-gray-600">
+        &copy; 2024 Space Industry. All rights reserved.
+   </footer>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           document.getElementById('hamburger').addEventListener('click', function() {
+               const navMenu = document.getElementById('nav-menu');
+               if (navMenu.classList.contains('hidden')) {
+                   navMenu.classList.remove('hidden');
+                   navMenu.classList.add('block');
+               } else {
+                   navMenu.classList.remove('block');
+                   navMenu.classList.add('hidden');
+               }
+           });
+       });
+   </script>
+  </body>
+</html>

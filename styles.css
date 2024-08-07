@@ -17,7 +17,7 @@ body::before {
     left: -150%;
     width: 400%;
     height: 400%;
-    background-image: url('images/large-background.jpg');
+    background-image: url(' /large-background.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;

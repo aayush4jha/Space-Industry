@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrophysics - Explore the Universe</title>
+    <link rel="icon" type="image/png" href="/logo.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-white">
+    <header class="header flex flex-col sm:flex-row sm:items-center p-4 bg-gray-800 text-white">
+        <div class="logo flex items-center justify-between sm:justify-start w-full">
+            <a href="index.html">
+                <img src="/logo.jpg" alt="Logo" class="h-12 w-12 rounded-full m-0 p-0">
+            </a>
+            <h1 class="text-lg pl-2 m-0">Space Industry</h1>
+            <button id="hamburger" class="sm:hidden block flex items-center px-3 py-2">
+                <svg class="w-[30px]" viewBox="0 0 100 80" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="30" width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="60" width="100" height="20" rx="10" fill="white"></rect>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav-menu" class="hidden sm:block mt-4 sm:mt-0 sm:ml-auto">
+            <ul class="flex flex-col sm:flex-row list-none p-0 gap-4 sm:gap-6">
+                <li><a href="index.html" class="text-white no-underline">Home</a></li>
+                <li><a href="about.html" class="text-white no-underline">About</a></li>
+                <li><a href="categories.html" class="text-white no-underline">Categories</a></li>
+                <li><a href="missions.html" class="text-white no-underline">Missions</a></li>
+                <li><a href="contact.html" class="text-white no-underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content" class="p-8">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold mb-6">Learn more about Astrophysics!</h1>
+        </div>
+
+        <div class="space-y-12 sm:px-32">
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg overflow-hidden">
+                <img src="/cosmology.jpg" alt="Cosmology" class="w-full md:w-1/2 h-auto">
+                <div class="p-6 text-center md:text-left">
+                    <h2 class="text-2xl font-semibold mb-2">Cosmology</h2>
+                    <p>Cosmology is the study of the universe as a whole, including its origins, evolution, structure, and eventual fate. It encompasses the Big Bang theory, the cosmic microwave background, dark matter, and dark energy. Cosmologists aim to understand the large-scale properties of the universe and the laws that govern its behavior.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6 text-center md:text-left order-2 md:order-1">
+                    <h2 class="text-2xl font-semibold mb-2">Stellar Astrophysics</h2>
+                    <p>Stellar astrophysics focuses on the study of stars, including their formation, evolution, and eventual demise. It examines the physical properties of stars, their internal and external processes, and their interactions with surrounding environments. Stellar astrophysics is crucial for understanding the life cycles of stars and their impact on the cosmos.</p>
+                </div>
+                <img src="/stellar.jpg" alt="Stellar Astrophysics" class="w-full md:w-1/2 h-auto order-1 md:order-2">
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg overflow-hidden">
+                <img src="/galactic.jpg" alt="Galactic Astrophysics" class="w-full md:w-1/2 h-auto">
+                <div class="p-6 text-center md:text-left">
+                    <h2 class="text-2xl font-semibold mb-2">Galactic Astrophysics</h2>
+                    <p>Galactic astrophysics studies the structure, dynamics, and interactions of galaxies. It includes the examination of the Milky Way and other galaxies, their formation, and their evolution over time. Researchers in this field seek to understand the processes that shape galaxies and the role they play in the broader universe.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6 text-center md:text-left order-2 md:order-1">
+                    <h2 class="text-2xl font-semibold mb-2">High-Energy Astrophysics</h2>
+                    <p>High-energy astrophysics investigates the most energetic phenomena in the universe, such as supernovae, gamma-ray bursts, and black holes. This subdivision explores the processes that produce high-energy radiation and particles, providing insights into extreme environments and fundamental physical laws.</p>
+                </div>
+                <img src="/high-energy.jpg" alt="High-Energy Astrophysics" class="w-full md:w-1/2 h-auto order-1 md:order-2">
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg overflow-hidden">
+                <img src="/planetary.jpg" alt="Planetary Astrophysics" class="w-full md:w-1/2 h-auto">
+                <div class="p-6 text-center md:text-left">
+                    <h2 class="text-2xl font-semibold mb-2">Planetary Astrophysics</h2>
+                    <p>Planetary astrophysics focuses on the study of planets, both within our solar system and in other star systems (exoplanets). It examines planetary formation, composition, atmospheres, and potential for habitability. This field is essential for understanding the diversity of planetary systems and the potential for life beyond Earth.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6 text-center md:text-left order-2 md:order-1">
+                    <h2 class="text-2xl font-semibold mb-2">Astroparticle Physics</h2>
+                    <p>Astroparticle physics bridges the gap between astrophysics and particle physics. It studies cosmic rays, neutrinos, and other subatomic particles originating from space. This subdivision aims to uncover the fundamental particles and forces that govern the universe, providing insights into both cosmology and particle physics.</p>
+                </div>
+                <img src="/astroparticle.jpg" alt="Astroparticle Physics" class="w-full md:w-1/2 h-auto order-1 md:order-2">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-8">
+        Made with <span class="text-red-600 text-[24px]">&hearts;</span> by Team Crazy Coders.
+        Connect with us for latest updates!
+       <div class="flex justify-center mt-4 space-x-4">
+           <a href="https://www.facebook.com">
+               <img src="/facebook.jpg" alt="Facebook" class="h-12 w-12">
+           </a>
+           <a href="https://www.instagram.com">
+               <img src="/instagram.jpg" alt="Instagram" class="h-12 w-12">
+           </a>
+           <a href="https://www.twitter.com">
+               <img src="/twitter.jpg" alt="Twitter" class="h-12 w-12">
+           </a>
+           <a href="https://www.linkedin.com">
+               <img src="/linkedin.avif" alt="LinkedIn" class="h-12 w-12">
+           </a>
+       </div>
+       <hr class="my-4 border-gray-600">
+        &copy; 2024 Space Industry. All rights reserved.
+   </footer>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           document.getElementById('hamburger').addEventListener('click', function() {
+               const navMenu = document.getElementById('nav-menu');
+               if (navMenu.classList.contains('hidden')) {
+                   navMenu.classList.remove('hidden');
+                   navMenu.classList.add('block');
+               } else {
+                   navMenu.classList.remove('block');
+                   navMenu.classList.add('hidden');
+               }
+           });
+       });
+   </script>
+</body>
+</html>

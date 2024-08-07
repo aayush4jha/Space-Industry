@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Travel - Explore the Universe</title>
+    <link rel="icon" type="image/png" href="/logo.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class=" text-white">
+    <header class="header flex flex-col sm:flex-row sm:items-center p-4 bg-gray-800 text-white">
+        <div class="logo flex items-center justify-between sm:justify-start w-full">
+            <a href="index.html">
+                <img src="/logo.jpg" alt="Logo" class="h-12 w-12 rounded-full m-0 p-0">
+            </a>
+            <h1 class="text-lg pl-2 m-0">Space Industry</h1>
+            <button id="hamburger" class="sm:hidden block flex items-center px-3 py-2">
+                <svg class="w-[30px]" viewBox="0 0 100 80" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="30" width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="60" width="100" height="20" rx="10" fill="white"></rect>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav-menu" class="hidden sm:block mt-4 sm:mt-0 sm:ml-auto">
+            <ul class="flex flex-col sm:flex-row list-none p-0 gap-4 sm:gap-6">
+                <li><a href="index.html" class="text-white no-underline">Home</a></li>
+                <li><a href="about.html" class="text-white no-underline">About</a></li>
+                <li><a href="categories.html" class="text-white no-underline">Categories</a></li>
+                <li><a href="missions.html" class="text-white no-underline">Missions</a></li>
+                <li><a href="contact.html" class="text-white no-underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="content" class="p-6">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold mb-6">Learn more about Space Travel!</h1>
+        </div>
+
+        <div class="space-y-12 sm:px-32">
+            <div class="flex flex-col md:flex-row bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-900 p-6 rounded-lg shadow-lg items-center">
+                <img src="/rocket-technology.jpg" alt="Rocket Technology" class="h-72 md:h-auto md:w-1/2 rounded-lg mb-4 md:mb-0">
+                <div class="text-center md:text-left md:w-1/2 md:ml-6">
+                    <h2 class="text-2xl font-bold mb-2">Rocket Technology</h2>
+                    <p>Rocket technology is the foundation of space travel, enabling the launch of spacecraft beyond Earth's atmosphere. This subdivision explores advancements in propulsion systems, fuel efficiency, and engineering innovations that make space missions possible. From traditional chemical rockets to next-generation ion propulsion, rocket technology continues to evolve, pushing the boundaries of exploration.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-900 p-6 rounded-lg shadow-lg items-center">
+                <div class="text-center md:text-right md:w-1/2 md:mr-6 order-2 md:order-1">
+                    <h2 class="text-2xl font-bold mb-2">Spacecraft Design</h2>
+                    <p>Spacecraft design involves the development of vehicles capable of operating in the harsh conditions of space. This field covers the creation of manned and unmanned spacecraft, including satellites, space probes, and space stations. Engineers focus on durability, reliability, and the ability to support life for extended missions, paving the way for future interplanetary travel.</p>
+                </div>
+                <img src="/spacecraft-design.jpg" alt="Spacecraft Design" class="h-72 md:h-auto md:w-1/2 rounded-lg mb-4 md:mb-0 order-1 md:order-2">
+            </div>
+
+            <div class="flex flex-col md:flex-row bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-900 p-6 rounded-lg shadow-lg items-center">
+                <img src="/human-spaceflight.avif" alt="Human Spaceflight" class="h-72 md:h-auto md:w-1/2 rounded-lg mb-4 md:mb-0">
+                <div class="text-center md:text-left md:w-1/2 md:ml-6">
+                    <h2 class="text-2xl font-bold mb-2">Human Spaceflight</h2>
+                    <p>Human spaceflight is the study and practice of sending humans into space. This subdivision covers the challenges of life support, health, and safety in microgravity environments. It includes historical missions like Apollo, as well as modern efforts by NASA, SpaceX, and other agencies to establish a sustainable human presence on the Moon and Mars.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-900 p-6 rounded-lg shadow-lg items-center">
+                <div class="text-center md:text-right md:w-1/2 md:mr-6 order-2 md:order-1">
+                    <h2 class="text-2xl font-bold mb-2">Robotic Exploration</h2>
+                    <p>Robotic exploration uses automated spacecraft to explore distant worlds. This field has been instrumental in our understanding of the solar system, with missions like the Mars rovers, Voyager probes, and the Hubble Space Telescope. Robotic missions provide critical data about other planets, moons, and asteroids, often serving as precursors to human exploration.</p>
+                </div>
+                <img src="/robotic-exploration.jpg" alt="Robotic Exploration" class="h-72 md:h-auto md:w-1/2 rounded-lg mb-4 md:mb-0 order-1 md:order-2">
+            </div>
+
+            <div class="flex flex-col md:flex-row bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-900 p-6 rounded-lg shadow-lg items-center">
+                <img src="/space-tourism.jpg" alt="Space Tourism" class="h-72 md:h-auto md:w-1/2 rounded-lg mb-4 md:mb-0">
+                <div class="text-center md:text-left md:w-1/2 md:ml-6">
+                    <h2 class="text-2xl font-bold mb-2">Space Tourism</h2>
+                    <p>Space tourism aims to make space accessible to private individuals. This emerging industry offers suborbital and orbital flights to civilians, allowing them to experience weightlessness and view Earth from space. Companies like Blue Origin and Virgin Galactic are at the forefront, working to make space travel a reality for non-professional astronauts.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-900 p-6 rounded-lg shadow-lg items-center">
+                <div class="text-center md:text-right md:w-1/2 md:mr-6 order-2 md:order-1">
+                    <h2 class="text-2xl font-bold mb-2">Interplanetary Travel</h2>
+                    <p>Interplanetary travel focuses on missions beyond Earth's orbit, including the exploration of Mars, the outer planets, and their moons. This subdivision examines the technological and logistical challenges of long-duration space travel, habitat construction, and resource utilization on other celestial bodies. The goal is to enable sustainable human exploration and potential colonization of other planets.</p>
+                </div>
+                <img src="/interplanetary-travel.jpg" alt="Interplanetary Travel" class="h-72 md:h-auto md:w-1/2 rounded-lg mb-4 md:mb-0 order-1 md:order-2">
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white text-center py-6 mt-8">
+        Made with <span class="text-red-600 text-[24px]">&hearts;</span> by Team Crazy Coders.
+        Connect with us for latest updates!
+       <div class="flex justify-center mt-4 space-x-4">
+           <a href="https://www.facebook.com">
+               <img src="/facebook.jpg" alt="Facebook" class="h-12 w-12">
+           </a>
+           <a href="https://www.instagram.com">
+               <img src="/instagram.jpg" alt="Instagram" class="h-12 w-12">
+           </a>
+           <a href="https://www.twitter.com">
+               <img src="/twitter.jpg" alt="Twitter" class="h-12 w-12">
+           </a>
+           <a href="https://www.linkedin.com">
+               <img src="/linkedin.avif" alt="LinkedIn" class="h-12 w-12">
+           </a>
+       </div>
+       <hr class="my-4 border-gray-600">
+        &copy; 2024 Space Industry. All rights reserved.
+   </footer>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           document.getElementById('hamburger').addEventListener('click', function() {
+               const navMenu = document.getElementById('nav-menu');
+               if (navMenu.classList.contains('hidden')) {
+                   navMenu.classList.remove('hidden');
+                   navMenu.classList.add('block');
+               } else {
+                   navMenu.classList.remove('block');
+                   navMenu.classList.add('hidden');
+               }
+           });
+       });
+   </script>
+</body>
+</html>

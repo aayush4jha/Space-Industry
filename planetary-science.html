@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Science - Explore the Universe</title>
+    <link rel="icon" type="image/png" href="/logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class=" text-white font-sans">
+    <header class="header flex flex-col sm:flex-row sm:items-center p-4 bg-gray-800 text-white">
+        <div class="logo flex items-center justify-between sm:justify-start w-full">
+            <a href="index.html">
+                <img src="/logo.jpg" alt="Logo" class="h-12 w-12 rounded-full m-0 p-0">
+            </a>
+            <h1 class="text-lg pl-2 m-0">Space Industry</h1>
+            <button id="hamburger" class="sm:hidden block flex items-center px-3 py-2">
+                <svg class="w-[30px]" viewBox="0 0 100 80" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="30" width="100" height="20" rx="10" fill="white"></rect>
+                    <rect y="60" width="100" height="20" rx="10" fill="white"></rect>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav-menu" class="hidden sm:block mt-4 sm:mt-0 sm:ml-auto">
+            <ul class="flex flex-col sm:flex-row list-none p-0 gap-4 sm:gap-6">
+                <li><a href="index.html" class="text-white no-underline">Home</a></li>
+                <li><a href="about.html" class="text-white no-underline">About</a></li>
+                <li><a href="categories.html" class="text-white no-underline">Categories</a></li>
+                <li><a href="missions.html" class="text-white no-underline">Missions</a></li>
+                <li><a href="contact.html" class="text-white no-underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="content" class="p-6">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl">Learn more about Planetary Science!</h1>
+        </div>
+
+        <div class="space-y-8 sm:px-32">
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg p-4">
+                <img src="/terrestrial-planets.jpg" alt="Terrestrial Planets" class="h-64 w-full md:w-1/2 rounded-lg mb-4 md:mb-0 md:mr-4">
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl mb-2">Terrestrial Planets</h2>
+                    <p>Terrestrial planets, including Mercury, Venus, Earth, and Mars, are rocky worlds with solid surfaces. This subdivision examines their geology, atmospheres, and potential for life. Studies of these planets provide insights into planetary formation, evolution, and the conditions necessary for habitability.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg p-4">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-2xl mb-2">Gas Giants</h2>
+                    <p>Gas giants, such as Jupiter and Saturn, are massive planets composed primarily of hydrogen and helium. This field explores their complex atmospheres, magnetic fields, and extensive moon systems. Understanding gas giants helps scientists learn about the dynamics of giant planets and their role in the solar system.</p>
+                </div>
+                <img src="/gas-giants.jpg" alt="Gas Giants" class="h-64 w-full md:w-1/2 rounded-lg mb-4 md:mb-0 md:ml-4 order-1 md:order-2">
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg p-4">
+                <img src="/ice-giants.jpg" alt="Ice Giants" class="h-64 w-full md:w-1/2 rounded-lg mb-4 md:mb-0 md:mr-4">
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl mb-2">Ice Giants</h2>
+                    <p>Ice giants, including Uranus and Neptune, are planets with cores of rock and ice surrounded by thick atmospheres. This subdivision delves into their unique compositions, extreme weather patterns, and intriguing magnetic fields. Research on ice giants expands our understanding of the diversity of planetary systems.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg p-4">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-2xl mb-2">Dwarf Planets</h2>
+                    <p>Dwarf planets, like Pluto and Eris, are small celestial bodies that orbit the sun but have not cleared their orbital paths of other debris. This area of study focuses on their characteristics, such as their compositions, surfaces, and potential atmospheres, shedding light on the outer reaches of our solar system.</p>
+                </div>
+                <img src="/dwarf-planets.jpg" alt="Dwarf Planets" class="h-64 w-full md:w-1/2 rounded-lg mb-4 md:mb-0 md:ml-4 order-1 md:order-2">
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg p-4">
+                <img src="/planetary-moons.jpg" alt="Planetary Moons" class="h-64 w-full md:w-1/2 rounded-lg mb-4 md:mb-0 md:mr-4">
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl mb-2">Planetary Moons</h2>
+                    <p>Planetary moons, or natural satellites, vary greatly in size and composition. This subdivision examines the diverse moons of the solar system, from Earth's Moon to the icy moons of Jupiter and Saturn. These studies provide critical insights into planetary processes and the potential for extraterrestrial life.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-red-400 via-purple-500 to-indigo-900 rounded-lg shadow-lg p-4">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-2xl mb-2">Planetary Rings</h2>
+                    <p>Planetary rings are composed of countless small particles orbiting around planets. This field investigates the formation, structure, and dynamics of ring systems, primarily around the gas giants. Research on planetary rings helps scientists understand the processes governing ring formation and evolution.</p>
+                </div>
+                <img src="/planetary-rings.jpg" alt="Planetary Rings" class="h-64 w-full md:w-1/2 rounded-lg mb-4 md:mb-0 md:ml-4 order-1 md:order-2">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-8">
+        Made with <span class="text-red-600 text-[24px]">&hearts;</span> by Team Crazy Coders.
+        Connect with us for latest updates!
+       <div class="flex justify-center mt-4 space-x-4">
+           <a href="https://www.facebook.com">
+               <img src="/facebook.jpg" alt="Facebook" class="h-12 w-12">
+           </a>
+           <a href="https://www.instagram.com">
+               <img src="/instagram.jpg" alt="Instagram" class="h-12 w-12">
+           </a>
+           <a href="https://www.twitter.com">
+               <img src="/twitter.jpg" alt="Twitter" class="h-12 w-12">
+           </a>
+           <a href="https://www.linkedin.com">
+               <img src="/linkedin.avif" alt="LinkedIn" class="h-12 w-12">
+           </a>
+       </div>
+       <hr class="my-4 border-gray-600">
+        &copy; 2024 Space Industry. All rights reserved.
+   </footer>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           document.getElementById('hamburger').addEventListener('click', function() {
+               const navMenu = document.getElementById('nav-menu');
+               if (navMenu.classList.contains('hidden')) {
+                   navMenu.classList.remove('hidden');
+                   navMenu.classList.add('block');
+               } else {
+                   navMenu.classList.remove('block');
+                   navMenu.classList.add('hidden');
+               }
+           });
+       });
+   </script>
+</body>
+</html>
