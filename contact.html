@@ -91,6 +91,8 @@
         margin-bottom: 10px;
         border-radius: 4px;
         border: 1px solid #ccc;
+        background-color: white; /* Ensure background is white */
+        color: black; /* Ensure text color is black */
       }
       .contact-form button {
         padding: 10px;
@@ -114,6 +116,15 @@
         width: 50px;
         vertical-align: middle;
       }
+      /* Style for the submission message */
+      .submission-message {
+        color: #22c55e; /* Green color */
+        font-weight: bold;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+        display: none; /* Hidden by default */
+      }
     </style>
   </head>
   <body>
@@ -127,7 +138,6 @@
           <img
             src="/logo.jpg"
             alt="Logo"
-
             class="h-12 w-12 rounded-full m-0 p-0"
           />
         </a>
@@ -180,22 +190,25 @@
       </div>
       <div class="contact-form">
         <h3>Send Us a Message</h3>
-        <form>
+        <form id="contactForm">
           <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name" required autocomplete="off" />
 
           <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" required autocomplete="off" />
 
           <label for="message">Your Message:</label>
           <textarea id="message" name="message" rows="4" required></textarea>
 
           <button type="submit">Send Message</button>
+          
+          <!-- Add submission message div -->
+          <div id="submissionMessage" class="submission-message">Submitted</div>
         </form>
       </div>
     </section>
     <footer class="bg-gray-800 text-white text-center py-6 mt-8">
-        Made with <span class="text-red-600 text-[24px]">&hearts;</span> by Team Crazy Coders.
+        Made with <span class="text-red-600 text-[24px]">&hearts;</span> by <a href="https://www.linkedin.com/in/aayush4jha">Aayush Jha</a>.
         Connect with us for latest updates!
        <div class="flex justify-center mt-4 space-x-4">
            <a href="https://www.facebook.com">
@@ -216,6 +229,7 @@
    </footer>
    <script>
        document.addEventListener('DOMContentLoaded', function() {
+           // Hamburger menu toggle
            document.getElementById('hamburger').addEventListener('click', function() {
                const navMenu = document.getElementById('nav-menu');
                if (navMenu.classList.contains('hidden')) {
@@ -225,6 +239,33 @@
                    navMenu.classList.remove('block');
                    navMenu.classList.add('hidden');
                }
+           });
+           
+           // Make sure inputs are working correctly
+           const nameInput = document.getElementById('name');
+           const emailInput = document.getElementById('email');
+           const messageInput = document.getElementById('message');
+           
+           // Clear any existing event listeners that might interfere
+           nameInput.value = '';
+           emailInput.value = '';
+           messageInput.value = '';
+           
+           // Contact form submission
+           document.getElementById('contactForm').addEventListener('submit', function(event) {
+               event.preventDefault(); // Prevent actual form submission
+               
+               // Show the submission message
+               const submissionMessage = document.getElementById('submissionMessage');
+               submissionMessage.style.display = 'block';
+               
+               // Optional: Reset the form after submission
+               this.reset();
+               
+               // Optional: Hide the message after a few seconds
+               setTimeout(function() {
+                   submissionMessage.style.display = 'none';
+               }, 5000); // Hide after 5 seconds
            });
        });
    </script>
